@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Created by ZK Studio
+-->
+
+<zk>
+	<device-config>
+		<device-type>ajax</device-type>
+		<timeout-uri>/timeout.zul</timeout-uri><!-- An empty URL can cause the browser to reload the same URL -->
+	</device-config>
+	
+	<library-property>
+  	  <name>org.zkoss.zul.Button.mold</name>
+   	 <value>trendy</value>
+	</library-property>
+	<library-property>
+  	  <name>org.zkoss.zul.Toolbar.mold</name>
+   	 <value>panel</value>
+	</library-property>
+</zk>

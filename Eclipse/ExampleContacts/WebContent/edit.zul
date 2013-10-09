@@ -1,0 +1,52 @@
+<zk>
+	<window id="form" apply="contacts.EditController" border="normal"
+		title="..." closable="true">
+		<style>
+			.dform { background: #D3F0BA; 
+			         -moz-border-radius:8px;
+					 -webkit-border-radius:8px; 
+					  border-radius:8px; 
+					  border: 1px #D3F0BA; 
+					  padding: 10px; 
+			} 
+			.lform { display: block; } 
+			.lmsg { padding: 10px;  } 
+			
+		</style>
+		<div class="dform">
+			<vbox id="input" spacing="7px">
+				<hbox>
+					<label class="lform" width="90px" value="Name *" />
+					<textbox id="name"
+						value="@{form$composer.contact.name}" constraint="no empty"
+						width="200px" />
+				</hbox>
+				<hbox>
+					<label class="lform" width="90px" value="Address" />
+					<textbox id="address" width="200px"
+						value="@{form$composer.contact.address}"  />
+				</hbox>
+				<hbox>
+					<label class="lform" width="90px" value="Country" />
+					<textbox id="country" width="200px"
+						value="@{form$composer.contact.country}"/>
+				</hbox>
+				<hbox>
+					<label class="lform" width="90px" value="Phone" />
+					<textbox id="zipcode" width="200px"
+						value="@{form$composer.contact.phone}"/>
+				</hbox>
+				<hbox>
+					<label class="lform" width="90px" value="Email" />
+					<textbox id="email" width="200px"
+						value="@{form$composer.contact.email}" />
+				</hbox>
+			</vbox>
+		</div>
+		<label class="lmsg" value="* required field" />
+		<toolbar align="end" >
+			<button id="ok" label="OK" />
+			<button id="cancel" label="Cancel" />
+		</toolbar>
+	</window>
+</zk>
